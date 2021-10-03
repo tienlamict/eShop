@@ -7,7 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "eShop.WebApp", "eShop.WebAp
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDFA23D5-EB3D-46F4-BE7B-615F837DC720}"
 	ProjectSection(SolutionItems) = preProject
-		C:\Users\Tien Lam\Desktop\Project-eShop.xlsx = C:\Users\Tien Lam\Desktop\Project-eShop.xlsx
 		README.md = README.md
 	EndProjectSection
 EndProject
