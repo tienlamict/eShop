@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "dfAvp5POvwJmWLos5594v0upqSn+g5gINXquPIMxC8r39uWE+BTSQ6v4o/5eG1i4V5iLyKjAxxCn+9mHnwAzJQ==",
+  "success": true,
+  "projectFilePath": "D:\\Project .NET\\eShopSolution\\eShop.WebApp\\eShop.WebApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tien Lam\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}
