@@ -40,7 +40,7 @@ namespace eShop.Data.EntityFramwork
         public DbSet<Contact> Contacts { get; set; }
         public DbSet<Language> Languages { get; set; }
         public DbSet<Order> Orders { get; set; }
-        public DbSet<OrderDetail> orderDetails { get; set; }
+        public DbSet<OrderDetail> OrderDetails { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<ProductInCategory> ProductInCategories { get; set; }
         public DbSet<ProductTranslation> ProductTranslations { get; set; }
