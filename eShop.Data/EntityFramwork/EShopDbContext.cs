@@ -1,4 +1,4 @@
-﻿using eShop.Data.Configuations;
+﻿using eShop.Data.Configurations;
 using eShop.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -18,8 +18,11 @@ namespace eShop.Data.EntityFramwork
         {
             // Add your own configuration here
             modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductInCategoryConfiguration());
 
-            base.OnModelCreating(modelBuilder);
+            //base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<AppConfig> AppConfigs { get; set; }

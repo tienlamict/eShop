@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace eShop.Data.Configuations
+namespace eShop.Data.Configurations
 {
     /*--- https://www.learnentityframeworkcore.com/configuration/fluent-api ---*/
     public class AppConfigConfiguration : IEntityTypeConfiguration<AppConfig>
@@ -19,7 +19,7 @@ namespace eShop.Data.Configuations
             builder.HasKey(p => p.Key);
 
             // Property
-            builder.Property(p => p.Value).IsRequired(true);
+            builder.Property(p => p.Value).IsRequired();
         }
     }
 }

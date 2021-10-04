@@ -7,5 +7,15 @@
 - Microsoft.EntityFrameworkCore.Design
 - Microsoft.EntityFrameworkCore.Tools
 ## Config entity (2 way)
-- Attribute configuation
-- Fluent API configuation => Apply on this solution
+- Attribute configuration
+- Fluent API configuration => Apply on this solution
+
+
+## 1 - Introduce ASP.NET MVC Core
+## 2 - Setup development environment 
+## 3 - Create solution and source code repository
+## 4 - Create solution structure
+## 5 - Design function
+## 6 - Design database
+## 7 - Create entity classes and set up Entity framwork core
+## 8 - Configure entity with Flutent API

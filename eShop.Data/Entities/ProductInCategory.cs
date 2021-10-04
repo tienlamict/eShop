@@ -4,6 +4,9 @@ using System.Text;
 
 namespace eShop.Data.Entities
 {
+    /// <summary>
+    /// Config many-to-many 
+    /// </summary>
     public class ProductInCategory
     {
         public int ProductId { get; set; }
