@@ -6,6 +6,9 @@
 - Microsoft.EntityFrameworkCore.SqlServer
 - Microsoft.EntityFrameworkCore.Design
 - Microsoft.EntityFrameworkCore.Tools
+- Microsoft.Extensions.Configuration
+- Microsoft.Extensions.Configuration.FileExtensions
+- Microsoft.Extensions.Configuration.Json
 ## Config entity (2 way)
 - Attribute configuration
 - Fluent API configuration => Apply on this solution
@@ -19,3 +22,4 @@
 ## 6 - Design database
 ## 7 - Create entity classes and set up Entity framwork core
 ## 8 - Configure entity with Flutent API
+## 9 - Migration database
