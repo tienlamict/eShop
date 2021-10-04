@@ -1,4 +1,5 @@
-﻿using eShop.Data.Entities;
+﻿using eShop.Data.Configuations;
+using eShop.Data.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,14 @@ namespace eShop.Data.EntityFramwork
         public EShopDbContext(DbContextOptions options) : base(options)
         {
            
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            // Add your own configuration here
+            modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
+
+            base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<AppConfig> AppConfigs { get; set; }

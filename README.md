@@ -8,4 +8,4 @@
 - Microsoft.EntityFrameworkCore.Tools
 ## Config entity (2 way)
 - Attribute configuation
-- Fluent API configuation
+- Fluent API configuation => Apply on this solution
