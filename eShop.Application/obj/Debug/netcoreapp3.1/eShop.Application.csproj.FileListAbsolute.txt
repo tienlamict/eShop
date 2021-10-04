@@ -1,0 +1,9 @@
+D:\Project .NET\eShopSolution\eShop.Application\bin\Debug\netcoreapp3.1\eShop.Application.deps.json
+D:\Project .NET\eShopSolution\eShop.Application\bin\Debug\netcoreapp3.1\eShop.Application.dll
+D:\Project .NET\eShopSolution\eShop.Application\bin\Debug\netcoreapp3.1\eShop.Application.pdb
+D:\Project .NET\eShopSolution\eShop.Application\obj\Debug\netcoreapp3.1\eShop.Application.csprojAssemblyReference.cache
+D:\Project .NET\eShopSolution\eShop.Application\obj\Debug\netcoreapp3.1\eShop.Application.AssemblyInfoInputs.cache
+D:\Project .NET\eShopSolution\eShop.Application\obj\Debug\netcoreapp3.1\eShop.Application.AssemblyInfo.cs
+D:\Project .NET\eShopSolution\eShop.Application\obj\Debug\netcoreapp3.1\eShop.Application.csproj.CoreCompileInputs.cache
+D:\Project .NET\eShopSolution\eShop.Application\obj\Debug\netcoreapp3.1\eShop.Application.dll
+D:\Project .NET\eShopSolution\eShop.Application\obj\Debug\netcoreapp3.1\eShop.Application.pdb
