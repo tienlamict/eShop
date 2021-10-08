@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using eShop.Data.EntityFramwork;
 
 namespace eShop.Data.Migrations
 {
     [DbContext(typeof(EShopDbContext))]
-    partial class EShopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211008134032_Add_CategoryTranslation_into_Category")]
+    partial class Add_CategoryTranslation_into_Category
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,18 +33,6 @@ namespace eShop.Data.Migrations
                     b.HasKey("Key");
 
                     b.ToTable("AppConfigs");
-
-                    b.HasData(
-                        new
-                        {
-                            Key = "HomeTitle",
-                            Value = "This is home page"
-                        },
-                        new
-                        {
-                            Key = "HomeKeyword",
-                            Value = "This is keyword"
-                        });
                 });
 
             modelBuilder.Entity("eShop.Data.Entities.Cart", b =>
@@ -100,22 +90,6 @@ namespace eShop.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            IsShowOnHome = true,
-                            SortOrder = 1,
-                            Status = 1
-                        },
-                        new
-                        {
-                            Id = 2,
-                            IsShowOnHome = true,
-                            SortOrder = 2,
-                            Status = 1
-                        });
                 });
 
             modelBuilder.Entity("eShop.Data.Entities.CategoryTranslation", b =>
@@ -161,44 +135,6 @@ namespace eShop.Data.Migrations
                     b.HasIndex("LanguageId");
 
                     b.ToTable("CategoryTranslations");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            CategoryId = 1,
-                            LanguageId = "en-US",
-                            Name = "Action",
-                            SeoAlias = "action-games",
-                            SeoDescription = "Action games"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            CategoryId = 1,
-                            LanguageId = "vi-VN",
-                            Name = "Hành động",
-                            SeoAlias = "hanh-dong",
-                            SeoDescription = "Trò chơi hành động"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CategoryId = 2,
-                            LanguageId = "en-US",
-                            Name = "Adventure",
-                            SeoAlias = "adventure",
-                            SeoDescription = "Adventure-games"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            CategoryId = 2,
-                            LanguageId = "vi-VN",
-                            Name = "Phiêu lưu",
-                            SeoAlias = "phieu-luu",
-                            SeoDescription = "Trò chơi phiêu lưu"
-                        });
                 });
 
             modelBuilder.Entity("eShop.Data.Entities.Contact", b =>
@@ -255,20 +191,6 @@ namespace eShop.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Languages");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = "vi-VN",
-                            IsDefault = true,
-                            Name = "Tiếng Việt"
-                        },
-                        new
-                        {
-                            Id = "en-US",
-                            IsDefault = false,
-                            Name = "English"
-                        });
                 });
 
             modelBuilder.Entity("eShop.Data.Entities.Order", b =>
@@ -360,17 +282,6 @@ namespace eShop.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Products");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            DateCreated = new DateTime(2021, 10, 8, 21, 49, 33, 10, DateTimeKind.Local).AddTicks(6648),
-                            OriginalPrice = 100000m,
-                            Price = 200000m,
-                            Stock = 0,
-                            ViewCount = 0
-                        });
                 });
 
             modelBuilder.Entity("eShop.Data.Entities.ProductInCategory", b =>
@@ -386,13 +297,6 @@ namespace eShop.Data.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductInCategories");
-
-                    b.HasData(
-                        new
-                        {
-                            CategoryId = 1,
-                            ProductId = 1
-                        });
                 });
 
             modelBuilder.Entity("eShop.Data.Entities.ProductTranslation", b =>
@@ -443,30 +347,6 @@ namespace eShop.Data.Migrations
                     b.HasIndex("ProductId");
 
                     b.ToTable("ProductTranslations");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Description = "",
-                            Details = "Description of product",
-                            LanguageId = "en-US",
-                            Name = "Resident evil 2 remake",
-                            ProductId = 1,
-                            SeoAlias = "resident-evil-2",
-                            SeoDescription = "Resident evil 2 remake"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Description = "",
-                            Details = "Mô tả sản phẩm",
-                            LanguageId = "vi-VN",
-                            Name = "Resident evil 2 remake",
-                            ProductId = 1,
-                            SeoAlias = "resident-evil-2",
-                            SeoDescription = "Resident evil 2 remake"
-                        });
                 });
 
             modelBuilder.Entity("eShop.Data.Entities.Promotion", b =>

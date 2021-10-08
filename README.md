@@ -20,6 +20,7 @@
 - 4/Create solution structure
 - 5/Design function
 - 6/Design database
-- 7/Create entity classes and set up Entity framwork core
+- 7/Create entity classes and set up Entity framework core
 - 8/Configure entity with Flutent API
 - 9/Migration database
+- 10/Data Seeding using Entity framework (Khoi tao data mau)

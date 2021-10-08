@@ -1,5 +1,6 @@
 ﻿using eShop.Data.Configurations;
 using eShop.Data.Entities;
+using eShop.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -16,10 +17,12 @@ namespace eShop.Data.EntityFramwork
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Add your own configuration here
+            #region Config using flute API 
+
             modelBuilder.ApplyConfiguration(new AppConfigConfiguration());
             modelBuilder.ApplyConfiguration(new CartConfiguration());
             modelBuilder.ApplyConfiguration(new CategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new CategoryTranslationConfiguration());
             modelBuilder.ApplyConfiguration(new ContactConfiguration());
             modelBuilder.ApplyConfiguration(new LanguageConfiguration());
             modelBuilder.ApplyConfiguration(new OrderConfiguration());
@@ -29,6 +32,14 @@ namespace eShop.Data.EntityFramwork
             modelBuilder.ApplyConfiguration(new ProductTranslationConfiguration());
             modelBuilder.ApplyConfiguration(new PromotionConfiguration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
+
+            #endregion
+
+            #region Data seeding - Tao data mau
+
+            modelBuilder.Seed();
+
+            #endregion
 
             //base.OnModelCreating(modelBuilder);
         }
