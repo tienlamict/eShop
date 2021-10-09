@@ -24,3 +24,4 @@
 - 8/Configure entity with Flutent API
 - 9/Migration database
 - 10/Data Seeding using Entity framework (Khoi tao data mau)
+- 11/Add Identity tables

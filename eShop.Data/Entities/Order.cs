@@ -24,5 +24,7 @@ namespace eShop.Data.Entities
         public OrderStatus Status { set; get; }
 
         public List<OrderDetail> OrderDetails { get; set; }
+
+        public AppUser AppUser { get; set; }
     }
 }

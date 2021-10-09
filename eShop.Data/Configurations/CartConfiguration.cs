@@ -13,11 +13,13 @@ namespace eShop.Data.Configurations
         {
             builder.ToTable("Carts");
 
-            builder.HasKey(x => x.Id);
+            builder.HasKey(p => p.Id);
 
-            builder.Property(x => x.Id).UseIdentityColumn();
+            builder.Property(p => p.Id).UseIdentityColumn();
 
-            builder.HasOne(x => x.Product).WithMany(x => x.Carts).HasForeignKey(x => x.ProductId);
+            builder.HasOne(p => p.Product).WithMany(p => p.Carts).HasForeignKey(p => p.ProductId);
+
+            builder.HasOne(p => p.AppUser).WithMany(p => p.Carts).HasForeignKey(p => p.UserId);
         }
     }
 }
